@@ -1,0 +1,17 @@
+This project was focused around computer vision color space conversions and image transformations, particularly histogram equalization and linear scaling.  This was all done in Python using PyCharm IDE.  This project involved creating four separate programs:
+
+Program 1
+The first program involved creating a specified width x height image of the full color spectrum using the following color values for each pixel at row i and column j:
+
+		L = 90,		u = 354*j/width – 134, 		v = 262*i/height – 140
+
+This required creating functions for converting between Luv and BGR color spaces.
+
+Program 2
+ The second program involved utilizing the same color space conversions from Program 1, this time to take a specified image and selected boxed region in that image to perform linear scaling on the luminance values (L-values) in that boxed region only.  This is all done through a custom function to demonstrate understanding of linear scaling.   The remainder of the image should remain untouched.
+
+Program 3
+The third program is similar to Program 2, only this time the boxed region of the image will undergo histogram equalization on the luminance values (L-values).  Again, this will be done through a custom function to demonstrate understanding of histogram equalization.  The remainder of the image should remain untouched.
+
+Program 4
+The last program is identical to Program 3, only this time openCV functions can be used for color conversions and histogram equalization in the boxed region.  The remainder of the image should remain untouched.
